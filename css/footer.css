@@ -1,12 +1,10 @@
 footer{
-  background-color: #8c56ef;
-}
-.footer{
-  text-align: center;
-  padding: 2rem;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
   margin-top: 6rem;
 }
 .footer p{
+  text-align: center;
   color: #fff;
   font-size: 2rem;
+  padding: 3rem;
 }
