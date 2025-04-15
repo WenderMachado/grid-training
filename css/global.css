@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Volkhov", Georgia, 'Times New Roman', Times, serif;
 }
 
 html{
@@ -24,12 +25,32 @@ a{
   --primary-color: #8751ed;
 }
 
-.container{
-  max-width: 140rem;
-  margin-bottom: 6rem;
+.estrutura{
+  display: grid;
+  grid-template-columns: minmax(16rem, 1fr) 3fr 30rem;
+  grid-template-areas: 
+  "header header header"
+  "sidenav content anuncios"
+  "footer footer footer"
+  ;
 }
 
-.logo{
-  width:215px;
-  height:36px;
+.header {
+  grid-area: header;
+}
+
+.sidenav {
+  grid-area: sidenav;
+}
+
+.content {
+  grid-area: content;
+}
+
+.anuncios {
+  grid-area: anuncios;
+}
+
+.footer {
+  grid-area: footer;
 }
