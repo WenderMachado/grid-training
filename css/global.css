@@ -28,6 +28,7 @@ a{
 
 .estrutura{
   display: grid;
+  margin: 0 auto;
   grid-template-columns: minmax(16rem, 1fr) 3fr 30rem;
   grid-template-areas: 
   "header header header"
@@ -35,7 +36,50 @@ a{
   "footer footer footer"
   ;
 }
-
+@media (max-width: 80rem) {
+  .estrutura {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "content"
+      "anuncios"
+      "footer";
+  }
+  .sidenav{
+    overflow-x: auto;
+  
+  }
+  .sidenav ul{
+    display: flex;
+  }
+  .sidenav ul li{
+    flex: 1 0 8rem;
+    margin-left: 2rem;
+  }
+  .sidenav li a{
+    margin: 3rem 3rem 3rem 0;
+  }
+  h2{
+    font-size: 4.8rem;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+  
+}
+@media (max-width: 60rem) {
+  .estrutura {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "sidenav"
+      "content"
+      "anuncios"
+      "footer";
+  }
+}
 .header {
   grid-area: header;
 }
@@ -54,4 +98,25 @@ a{
 
 .footer {
   grid-area: footer;
+}
+h1{
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #b07dfb;
+}
+.titulo span{
+  color: #b29bd4;
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+p{
+  font-size: 2.4rem;
+  line-height: 1.5;
+  letter-spacing: -0.005em;
+  color: rgba(0,0,0, .7);
+}
+.col-wide{
+  grid-column: 1/-1;
 }

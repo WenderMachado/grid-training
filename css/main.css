@@ -1,0 +1,85 @@
+.content{
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+.wolf-1{
+  grid-row: span 2;
+  align-self: end;
+}
+.wolf-2{
+align-self: end;
+}
+
+.informacoes p + P{
+margin-top: 3rem;
+}
+
+.caracteristicas{
+  display: flex;
+  align-items: flex-start;
+
+}
+
+.caracteristicas > div{
+  width: 8rem;
+  text-align: center;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 0 rgba(44, 44, 44, 0.15);
+  line-height: 1;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.caracteristicas span{
+  display: block;
+  color: #b07dfb;
+}
+.numero{
+  font-size: 3.4rem;
+  padding: 1rem 2rem;
+}
+
+.rotulo{
+  background-color: #fff;
+  font-size: 1.6rem;
+  border-radius: 0 0 5px 5px;
+  padding: 5px 0;
+  position: relative;
+  top: 2px;
+}
+.destaque{
+  font-size: 1.4rem;
+  color: #b07dfb;
+  max-width: 26ch;
+}
+.citacao,
+.atributos{
+  align-self: start;
+  padding: 3rem;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #8844ee, #b07dfb);
+  box-shadow: 5px 5px 15px 0px rgba(44, 44, 44, 0.15);
+}
+.citacao p{
+ font-size: 2.4rem;
+ font-style: italic;
+ text-align: center;
+ max-width: 50rem;
+ margin: 0 auto;
+ color: #fff;
+}
+.atributos li{
+  color: #fff;
+  font-family: Courier, monospace;
+  font-size: 2rem;
+  padding: 1.5rem;
+
+}
+.atributos li + li{
+  border-top: solid 2px #b07dfb;
+}
